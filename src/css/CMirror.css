@@ -1,0 +1,45 @@
+.cm-s-moxer.CodeMirror {
+  margin: 0;
+  padding-top: 1em;
+  height: auto;
+  font-size: 14pt;
+}
+
+.CodeMirror-code {
+  word-wrap: break-word;
+}
+
+.CodeMirror-gutter,
+.cm-s-moxer.CodeMirror {
+  background: hsl(230, 30%, 19%);
+}
+
+/* Нумерация строк в CodeMirror */
+div.CodeMirror-linenumber.CodeMirror-gutter-elt {
+  color: hsla(48, 100%, 50%, 0.618) !important;
+}
+
+/* Цвет по-умолчанию в Codemirror */
+div.CodeMirror-code {
+  color: hsla(0, 0%, 97%, 0.973) !important;
+}
+
+/* Цвет блоков ``` в CodeMirror */
+span.cm-comment {
+  color: hsla(0, 0%, 97%, 0.618) !important ;
+}
+
+/* Выделение текста */
+.cm-s-moxer div.CodeMirror-selected {
+  background: hsla(230, 18%, 47%, calc(0.382 * 0.382));
+}
+
+/* Активное выделение текста */
+.cm-s-moxer.CodeMirror-focused div.CodeMirror-selected {
+  background: hsla(230, 18%, 47%, calc(0.382 * 0.618));
+}
+
+/* Цвет блоков # в CodeMirror */
+span.cm-header {
+  color: #894366;
+}

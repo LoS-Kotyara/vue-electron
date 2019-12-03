@@ -4,6 +4,7 @@ import Vuex from "vuex";
 import showdown from "showdown";
 import showdownKatex from "showdown-katex";
 import showdownHighlight from "showdown-highlight";
+import sanitize from "sanitize-html";
 
 const converter = new showdown.Converter({
   extensions: [showdownKatex(), showdownHighlight()]
@@ -21,7 +22,8 @@ export const store = new Vuex.Store({
       return state.input;
     },
     getOutput: state => {
-      return converter.makeHtml(state.input);
+      let temp = sanitize(state.input);
+      return converter.makeHtml(temp);
     }
   },
   mutations: {

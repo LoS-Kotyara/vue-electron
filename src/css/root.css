@@ -1,0 +1,6 @@
+:root {
+  --scrollbar-track-color: transparent;
+  --scrollbar-color: #d6e0ea;
+  --scrollbar-size: 0.375rem;
+  --scrollbar-minlength: 6px;
+}

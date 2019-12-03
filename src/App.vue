@@ -31,12 +31,5 @@ body,
   height: 100%;
   width: 100%;
 }
-
-:root {
-  --scrollbar-track-color: transparent;
-  --scrollbar-color: #bcd;
-
-  --scrollbar-size: 0.375rem;
-  --scrollbar-minlength: 6px; /* Минимальная длина бегунка скроллбара (ширина горизонтального, высота вертикального) */
-}
+@import "./css/root.css";
 </style>

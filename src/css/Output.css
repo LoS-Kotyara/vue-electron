@@ -1,0 +1,29 @@
+#output::-webkit-scrollbar {
+  height: var(--scrollbar-size);
+  width: var(--scrollbar-size);
+}
+#output::-webkit-scrollbar-track {
+  background-color: var(--scrollbar-track-color);
+}
+#output::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-color);
+  border: 1px solid #bbb;
+  border-radius: 2px;
+  width: 8px;
+}
+#output::-webkit-scrollbar-thumb:vertical {
+  min-height: var(--scrollbar-minlength);
+}
+
+/* Блоки кода в зоне вывода (конструкции ``` в CodeMirror) */
+#output > blockquote > ul > li > p > code,
+#output > blockquote > p > code {
+  color: hsla(39, 100%, 50%);
+}
+
+div#output > pre,
+div#output > span > span,
+div#output > blockquote {
+  background: hsla(230, 18%, 47%, calc(0.382 * 0.5));
+  padding: 0.5em;
+}

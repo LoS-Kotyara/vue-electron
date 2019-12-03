@@ -13,8 +13,6 @@
   border: 0pt;
   height: auto;
   font-size: 14pt;
-  background: #22273f;
-  color: #f8f8f8f8;
   border: solid #c45774;
   display: grid;
   grid-template-rows: 100%;
@@ -26,123 +24,17 @@
   font-size: 14pt;
   padding: 1em;
   margin: 0;
-  color: #f8f8f8f8;
+  color: hsla(0, 0%, 97%, 0.973);
   word-wrap: break-word;
   border: solid #c45774;
   overflow: auto;
 }
 
-#output::-webkit-scrollbar {
-  height: var(--scrollbar-size);
-  width: var(--scrollbar-size);
-}
-#output::-webkit-scrollbar-track {
-  background-color: var(--scrollbar-track-color);
-}
-#output::-webkit-scrollbar-thumb {
-  background-color: var(--scrollbar-color);
-  border: 1px solid #bbb;
-  border-radius: 2px;
-  width: 8px;
-  /* Если нужно - добавьте :hover и:active */
-}
-#output::-webkit-scrollbar-thumb:vertical {
-  min-height: var(--scrollbar-minlength);
-}
-
-div#output > pre,
-div#output > span > span {
-  background: hsla(34, 78%, 91%, 0.056);
-  padding: 0.5em;
-}
-
-#input > div {
+div.vue-codemirror {
   display: grid;
   grid-template-rows: 100%;
 }
 
-.cm-s-moxer.CodeMirror {
-  margin: 0;
-  padding-top: 1em;
-  /* color: #f8f8f8f8; */
-  height: auto;
-  font-size: 14pt;
-}
-
-.CodeMirror-code {
-  word-wrap: break-word;
-}
-
-.CodeMirror-gutter,
-.cm-s-moxer.CodeMirror,
 #output {
-  background: #22273f;
-}
-
-#input
-  > div
-  > div
-  > div.CodeMirror-scroll
-  > div.CodeMirror-sizer
-  > div
-  > div
-  > div
-  > div.CodeMirror-code
-  > div
-  > div
-  > div {
-  color: hsla(48, 100%, 50%, 0.618) !important;
-}
-
-#input
-  > div
-  > div
-  > div.CodeMirror-scroll
-  > div.CodeMirror-sizer
-  > div
-  > div
-  > div
-  > div.CodeMirror-code
-  > div
-  > pre {
-  color: #f8f8f8f8;
-}
-
-.cm-s-moxer .CodeMirror-line::selection,
-.cm-s-moxer .CodeMirror-line > span::selection,
-.cm-s-moxer .CodeMirror-line > span > span::selection,
-.CodeMirror-selected {
-  background: #cccccc;
-}
-
-#input
-  > div
-  > div
-  > div.CodeMirror-scroll
-  > div.CodeMirror-sizer
-  > div
-  > div
-  > div
-  > div.CodeMirror-code
-  > div
-  > pre
-  > span
-  > span.cm-comment {
-  color: hsla(0, 0%, 97%, 0.382);
-}
-
-#input
-  > div
-  > div
-  > div.CodeMirror-scroll
-  > div.CodeMirror-sizer
-  > div
-  > div
-  > div
-  > div.CodeMirror-code
-  > div
-  > pre
-  > span
-  > span.cm-header {
-  color: #894366;
+  background: hsl(230, 30%, 19%);
 }

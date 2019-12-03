@@ -2,6 +2,7 @@
 import "../../node_modules/codemirror/mode/markdown/markdown.js";
 import "../../node_modules/codemirror/theme/moxer.css";
 import "../../node_modules/codemirror/lib/codemirror.css";
+import "../../node_modules/codemirror/lib/codemirror";
 
 // Дополнительные стили прокрутки
 import "../../node_modules/codemirror/addon/scroll/simplescrollbars.js";
@@ -23,16 +24,25 @@ import "../../node_modules/codemirror/addon/search/searchcursor.js";
 import "../../node_modules/codemirror/addon/dialog/dialog.js";
 import "../../node_modules/codemirror/addon/dialog/dialog.css";
 
+import "../../node_modules/codemirror/addon/edit/continuelist";
+import "../../node_modules/codemirror/addon/edit/indentlist";
+
 let cmOptions = {
   scrollbarStyle: "overlay",
-  tabSize: 2,
+  tabSize: 4,
   mode: "text/x-markdown",
   theme: "moxer",
   lineNumbers: true,
   line: true,
   lineWrapping: true,
   autoCloseBrackets: true,
-  matchBrackets: true
+  matchBrackets: true,
+  indentUnit: 4,
+  extraKeys: {
+    Enter: "newlineAndIndentContinueMarkdownList",
+    Tab: "autoIndentMarkdownList",
+    "Shift-Tab": "autoUnindentMarkdownList"
+  }
 };
 
 export { cmOptions };
